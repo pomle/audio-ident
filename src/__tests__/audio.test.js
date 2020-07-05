@@ -1,5 +1,5 @@
-import fs from "fs";
-import { identifyBuffer } from "../audio";
+const fs = require("fs");
+const { identifyBuffer } = require("../audio");
 
 describe("Audio Header identification", () => {
   describe("#identifyBuffer", () => {
