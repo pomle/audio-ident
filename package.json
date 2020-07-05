@@ -4,6 +4,7 @@
   "license": "MIT",
   "private": false,
   "main": "src/audio.js",
+  "homepage": "https://github.com/pomle/audio-ident",
   "scripts": {
     "test": "jest"
   },
