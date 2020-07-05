@@ -1,7 +1,7 @@
 {
   "name": "@pomle/audio-ident",
   "version": "1.0.2",
-  "license": "UNLICENSED",
+  "license": "MIT",
   "private": false,
   "main": "src/audio.js",
   "scripts": {
