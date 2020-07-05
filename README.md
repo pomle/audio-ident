@@ -2,6 +2,9 @@
 
 Ultrafast zero-dependency JavaScript library for identifying WAVE and FLAC files in the browser.
 
+Useful when you expect a user to upload big WAVE or FLAC files and want to ensure they comply with a 
+specific format before the user have started sending data to your server.
+
 ## Usage
 
 1. Install
