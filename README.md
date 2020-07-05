@@ -39,3 +39,7 @@ const handleDrop = async event => {
   bitDepth: 16
 }
 ```
+
+## Examples
+
+[Vanilla JS](https://codesandbox.io/s/quizzical-babbage-lebsw?fontsize=14&hidenavigation=1&theme=dark)
