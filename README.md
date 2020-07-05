@@ -1,6 +1,6 @@
 # audio-ident
 
-A JavaScript library for identifying WAVE and FLAC files.
+Ultrafast zero-dependency JavaScript library for identifying WAVE and FLAC files in the browser.
 
 ## Usage
 
