@@ -1,6 +1,6 @@
 {
   "name": "@pomle/audio-ident",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "UNLICENSED",
   "private": false,
   "main": "src/audio.js",
