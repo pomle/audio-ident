@@ -5,7 +5,7 @@ then implemented for FLAC.
 FLAC format overview: https://xiph.org/flac/documentation_format_overview.html.
 WAVE format overview: http://soundfile.sapp.org/doc/WaveFormat/
 */
-export async function identifyFile(file) {
+async function identifyFile(file) {
   const headers = file.slice(0, 4096); // Read about 4 kiB.
   const buffer = new Uint8Array(await readAsArrayBuffer(headers));
   return identifyBuffer(buffer);
@@ -41,7 +41,7 @@ function findFormatChunk(buffer) {
   throw new Error('Could not find "fmt" chunk');
 }
 
-export function identifyBuffer(buffer) {
+function identifyBuffer(buffer) {
   const typeInfo = readString(buffer.slice(0, 4));
 
   if (typeInfo === "fLaC") {
@@ -86,10 +86,15 @@ export function identifyBuffer(buffer) {
   throw new Error(`Format bytes is ${typeInfo}, expected RIFF or fLaC`);
 }
 
-export function readAsArrayBuffer(file) {
+function readAsArrayBuffer(file) {
   return new Promise(resolve => {
     const fr = new FileReader();
     fr.addEventListener("load", () => resolve(fr.result));
     fr.readAsArrayBuffer(file);
   });
 }
+
+module.exports = {
+  identifyFile,
+  identifyBuffer,
+};
